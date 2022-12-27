@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+$white-color: #ffffff;
+$black-color: #000000;
+$light-blue-color: #f1eafb;
+$light-white-color: #f9f7f3;
+$orange-color: #9f4a19;
+$gray-color: #808080;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: "Roboto";
+}
+
+body {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: $light-white-color;
+}
+
+//--------- header--------
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .img-logo {
+    background-image: url(./assets/img-logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 104px;
+    height: 40px;
+  }
+
+  nav {
+    display: flex;
+
+    p {
+      font: 400 16px "Roboto";
+      color: $black-color;
+      border-left: 1px solid $black-color;
+      border-right: 1px solid $black-color;
+      padding: 20px 40px;
+    }
+
+    .btn {
+      background: $light-blue-color;
+      font: 400 16px "Roboto";
+      color: $orange-color;
+      width: 200px;
+      padding: 20px 0;
+      text-align: center;
+    }
+  }
+}
+
+// --------main--------
+
+// section - start-agency
+
+.start-agency {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+
+  .left-side {
+    width: 430px;
+
+    h1 {
+      font: 400 70px "Roboto";
+      color: $black-color;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font: 400 18px "Roboto";
+      color: $black-color;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      &:last-child {
+        font: 400 14px "Roboto";
+        color: $gray-color;
+        text-align: center;
+        margin-top: 15px;
+        width: 262px;
+      }
+    }
+
+    .btn-free {
+      background: $light-blue-color;
+      border: 1px solid $black-color;
+      font: 400 16px "Roboto";
+      color: $orange-color;
+      width: 262px;
+      padding: 11px 0;
+      text-align: center;
+      margin: 30px 0 12px;
+    }
+
+    .btn-demo {
+      background: $white-color;
+      border: 1px solid $black-color;
+      font: 400 16px "Roboto";
+      color: $orange-color;
+      width: 262px;
+      padding: 11px 0;
+      text-align: center;
+    }
+  }
+
+  .right-img {
+    background-image: url(./assets/start-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 460px;
+  }
+}
+
+// ----------section ----------
+
+section {
+  .img-phone {
+    background-image: url(./assets/img-phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 894px;
+    height: 733px;
+    margin: 120px auto 0;
+  }
+}
